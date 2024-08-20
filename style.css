@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+body {
+    transition: 1s;
+}
+
+.box {
+    
+    img {
+        width: 50%;
+    }
+
+}
+
+.open {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    &:hover {
+        background-color: blueviolet;
+        transition: 1s;
+    }
+}
+
+@keyframes anim {
+    0% {
+        rotate: 0%;
+    }
+
+    100% {
+        rotate: 100%;
+    }
+}
